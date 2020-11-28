@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/homebackpng">
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="enter name"
+        android:inputType="textPersonName"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/contactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userName"
+        android:layout_alignStart="@+id/userName"
+        android:layout_below="@+id/userName"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="enter contact number"
+        android:inputType="phone"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/buyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisterPassword"
+        android:layout_toLeftOf="@+id/LoginButton"
+        android:layout_toStartOf="@+id/LoginButton"
+        android:fontFamily="monospace"
+        android:text="Buyer"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisterPassword"
+        android:layout_toEndOf="@+id/RegisterButton"
+        android:layout_toRightOf="@+id/RegisterButton"
+        android:fontFamily="monospace"
+        android:text="Seller"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller"
+        android:layout_toEndOf="@+id/buyer"
+        android:layout_toRightOf="@+id/buyer"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="register"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ContactB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="enter contact number"
+        android:inputType="phone"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/LoginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ContactB"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/ContactB"
+        android:layout_below="@+id/ContactB"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="enter password"
+        android:inputType="textPassword"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/RegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/contactNumber"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="enter password"
+        android:inputType="textPassword"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/LoginBoxBuyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginPassword"
+        android:layout_toLeftOf="@+id/LoginButton"
+        android:layout_toStartOf="@+id/LoginButton"
+        android:fontFamily="monospace"
+        android:text="Buyer"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/LoginBoxSeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LoginButton"
+        android:layout_toEndOf="@+id/LoginButton"
+        android:layout_toRightOf="@+id/LoginButton"
+        android:fontFamily="monospace"
+        android:text="Seller"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginBoxBuyer"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="login"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="REGISTER"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="46dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/RegisterButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

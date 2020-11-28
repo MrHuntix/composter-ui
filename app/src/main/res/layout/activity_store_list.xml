@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout_buyer_store"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView5">
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/storemsg"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/itemsListB"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/swipe_refresh_layout_buyer_store"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backarrow"
+        android:onClick="goHomeS" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/swipe_refresh_layout_buyer_store"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/refresh"
+        android:onClick="refreshStore"
+        />
+
+</RelativeLayout>

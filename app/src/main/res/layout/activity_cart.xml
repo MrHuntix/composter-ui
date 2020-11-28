@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:background="#000000"
+        android:text="CART"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_alignParentLeft="true"
+        android:onClick="goBackC"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backarrow" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_alignParentEnd="true"
+        android:onClick="refreshC"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/refresh" />
+
+    <ListView
+        android:id="@+id/cartList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView35" />
+</RelativeLayout>

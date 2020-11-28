@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="ENTER NEW DETAILS"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/NewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView20"
+        android:ems="10"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColorHint="@android:color/black"
+        android:hint="enter new name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/NewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/NewName"
+        android:layout_alignRight="@+id/NewName"
+        android:layout_below="@+id/NewName"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="enter new contact"
+        android:inputType="number"
+        android:textColorHint="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/NewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NewContact"
+        android:layout_alignStart="@+id/NewContact"
+        android:layout_below="@+id/NewContact"
+        android:ems="10"
+        android:gravity="center"
+        android:textColorHint="#000000"
+        android:hint="enter new password"
+        android:textStyle="bold"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button6"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NewPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="change"
+        android:text="submit"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backarrow"
+        android:onClick="goHomeE" />
+</RelativeLayout>

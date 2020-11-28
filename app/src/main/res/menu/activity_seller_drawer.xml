@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_seller"
+            android:icon="@drawable/add"
+            android:title="Add Item" />
+        <item
+            android:id="@+id/nav_edit_seller"
+            android:icon="@drawable/edit"
+            android:title="Edit Information" />
+
+        <item
+            android:id="@+id/nav_feed_seller"
+            android:icon="@drawable/news"
+            android:title="News Feed" />
+
+        <item
+            android:id="@+id/nav_unsold_seller"
+            android:icon="@drawable/inventory"
+            android:title="View Inventory" />
+
+        <item
+            android:id="@+id/nav_offers_seller"
+            android:icon="@drawable/offers"
+            android:title="View Offers" />
+
+        <item
+            android:id="@+id/nav_optimise_seller"
+            android:icon="@drawable/optimise"
+            android:title="Optimise" />
+
+        <item android:id="@+id/log_out_seller"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>
